@@ -2,9 +2,9 @@ import re
 
 
 def redact_identifiers(text: str) -> str:
-    """Mask handles, email addresses, and phone numbers in a text string."""
-    redacted = re.sub(r"@[\w.-]+", "[REDACTED_HANDLE]", text)
-    redacted = re.sub(r"\b[\w.+-]+@[\w-]+\.[\w.-]+\b", "[REDACTED_EMAIL]", redacted)
+    """Mask email addresses, handles, and phone numbers in a text string."""
+    redacted = re.sub(r"\b[\w.+-]+@[\w-]+\.[\w.-]+\b", "[REDACTED_EMAIL]", text)
+    redacted = re.sub(r"@[\w.-]+", "[REDACTED_HANDLE]", redacted)
     redacted = re.sub(r"(?<!\w)(?:\+?\d[\d\s().-]{7,}\d)(?!\w)", "[REDACTED_PHONE]", redacted)
     return redacted
 

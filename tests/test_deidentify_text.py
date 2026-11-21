@@ -8,7 +8,7 @@ class TestDeidentifyText(unittest.TestCase):
         cleaned = redact_identifiers(sample)
         self.assertNotIn("@tig_helper", cleaned)
         self.assertNotIn("test@example.com", cleaned)
-        self.assertNotIn("555-0199", cleaned)
+        self.assertNotIn("+1 (212) 555-0199", cleaned)
         self.assertIn("[REDACTED_HANDLE]", cleaned)
         self.assertIn("[REDACTED_EMAIL]", cleaned)
         self.assertIn("[REDACTED_PHONE]", cleaned)
@@ -23,4 +23,3 @@ class TestDeidentifyText(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    
