@@ -1,0 +1,32 @@
+[
+  {
+    "id": "post_001",
+    "script": "geez",
+    "region": "US",
+    "text": "ሎሚ ኣዝየ ተጨኒቐ ኣለኹ፣ ተስፋ ቆሪጸ። በጃኹም ሓግዙኒ @tig_support"
+  },
+  {
+    "id": "post_002",
+    "script": "latin",
+    "region": "US",
+    "text": "Hiji azie dkum eye, tesfa qoritse. Call +1 (212) 555-0199"
+  },
+  {
+    "id": "post_003",
+    "script": "geez",
+    "region": "GLOBAL",
+    "text": "ሰላም ከመይ ኣለኻ፣ ሎሚ ጽቡቕ መዓልቲ እዩ።"
+  },
+  {
+    "id": "post_004",
+    "script": "geez",
+    "region": "ER",
+    "text": "ሕይወተይ ኣብ ሓደጋ እዩ ዘሎ፣ ሓገዝ የድልየኒ።"
+  },
+  {
+    "id": "post_005",
+    "script": "latin",
+    "region": "CA",
+    "text": "Beyney terife, no one understands. Reach me at helpme@example.com"
+  }
+]
